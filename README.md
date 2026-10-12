@@ -41,19 +41,19 @@ Your task is to containerize this existing application using Docker. You need to
 - To build the docker image run the command:
 
 ```bash
-docker build -t my-python-app .
+docker build -t my-node-app .
 ```
 
 - To run your docker container in port 3000 run the command:
 
 ```bash
-
+docker run --rm -p 3000:3000 my-node-app
 ```
 
 ## Reflection Question
 **Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?
 
-
+Docker containers are different from virtual machines because they share the host operating system, making them more lightweight and faster to start than VMs, which each typically run their own operating system. Development teams may choose Docker because it uses fewer resources and allows applications to run consistently across different environments. This makes deploying, testing, and scaling applications easier and more efficient.
 
 ## Application Requirements for Docker
 
